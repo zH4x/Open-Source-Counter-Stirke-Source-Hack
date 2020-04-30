@@ -1,8 +1,8 @@
 #include "aimbot.h"
 #include "../tools/game.h"
 #include "misc.h"
-#include "../options.h"
-#include "../Menu.h"
+#include "../Menu/options.h"
+#include "../Menu/Menu.h"
 caimbot aimbot;
 
 void apply_nospread_angles(CUserCmd* cmd, C_BasePlayer* local_player, Vector& viewangles)
