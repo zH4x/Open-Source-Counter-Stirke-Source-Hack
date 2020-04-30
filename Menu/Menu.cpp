@@ -573,10 +573,9 @@ void cmenu::misc_tab()
 
 		if (ImGui::Button("Submit##", ImVec2(60, 30)))
 		{
-			int length = sizeof(Options.Misc.ClanTag);
-			for (int j = 0; j < length; j++)
+			for (int j = 0; j < 100; j++)
 			{
-				if (j = length - 1)
+				if (j == 99)
 				{
 					g_engine->ClientCmd_Unrestricted("cl_clanid 0");
 					GetClanAddress(Options.Misc.ClanTag, j);
